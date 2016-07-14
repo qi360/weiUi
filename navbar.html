@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="weui.min.css"/>
+</head>
+<body>
+<div class="container" id="container">
+
+<div class="bd" style="height: 100%;">
+    <div class="weui_tab">
+        <div class="weui_navbar">
+            <div class="weui_navbar_item weui_bar_item_on">
+                选项一
+            </div>
+            <div class="weui_navbar_item">
+                选项二
+            </div>
+            <div class="weui_navbar_item">
+                选项三
+            </div>
+        </div>
+        <div class="weui_tab_bd">
+
+        </div>
+    </div>
+</div>
+
+</div>
+<script type="text/javascript" src="zepto.min.js"></script>
+<script type="text/javascript">
+
+// navbar
+$('#container').on('click', '.weui_navbar_item', function () {
+    $(this).addClass('weui_bar_item_on').siblings('.weui_bar_item_on').removeClass('weui_bar_item_on');
+});    
+
+</script>
+</body>
